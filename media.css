@@ -1,3 +1,448 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .container {
+        padding: 0 8px;
+
+
+    }
+
+    .btn {
+        padding: 4px 8px;
+        border-radius: 3px;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .cta-btn {
+        background: #FB937C;
+        color: #FFFF;
+    }
+
+    .section {
+        padding: 40px 0;
+
+    }
+
+    .page-heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .page-heading::after {
+        content: '';
+        height: 3px;
+        width: 100px;
+        background-color: #DEDEDE;
+        border-radius: 2px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50px);
+        bottom: -10px;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    /*-----------------------------------------*/
+    /*--------Home Page Start-------------------*/
+    /*-----------------------------------------*/
+
+    .home {
+        width: 100%;
+        background: #fff;
+    }
+
+    .header {
+        background: #F1F1F1;
+        padding: 4px 0;
+    }
+
+    .header>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header>div>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* logo */
+    .logo {
+        color: #3B2CE3;
+        font-size: 32px;
+    }
+
+    .menu {
+        color: #8684A0;
+        font-size: 32px;
+        display: block;
+        cursor: pointer;
+
+
+
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav a {
+        color: #353535;
+        background-color: #fff;
+        padding: 8px 16px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 8px;
+
+    }
+
+    nav a:hover {
+        background: #CCC;
+        color: #FFFF;
+    }
+
+    .intro-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .intro {
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .intro-image {
+        grid-area: 2 / 1 / 3 / 2;
+        margin-right: 45px;
+
+
+    }
+
+    .intro h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #353535;
+        padding-right: 72px;
+
+        text-align: center;
+    }
+
+    .intro h4 {
+        color: #8684A0;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        padding-right: 72px;
+    }
+
+    .intro p {
+        width: 320px;
+        margin-left: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: small;
+    }
+
+    /*-----------------------------------------*/
+    /*------About Page Start-------------------*/
+    /*-----------------------------------------*/
+
+    .about-me {
+        background-color: #F9F9F9;
+
+    }
+
+    .about-me>div>div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .about-me-text {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .about-me-numbers {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .about-me-text h2 {
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+
+    .about-me-text p {
+        margin-bottom: 16px;
+    }
+
+    .contact-details table {
+        border-collapse: separate;
+        border-spacing: 0 16px;
+        margin-bottom: 16px;
+    }
+
+    .contact-details table td {
+        padding-right: 16px;
+
+    }
+
+    .contact-details table td:first-child {
+        font-weight: bold;
+        color: #8684A0;
+    }
+
+    .about-me-numbers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+
+    .number {
+        padding: 32px;
+        background-color: #ffff;
+        text-align: center;
+    }
+
+    .number-clients {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .number-projects {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .number-coffee {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .number-hours {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .number>p:first-child {
+        font-size: 45px;
+        font-weight: bolder;
+        color: #3B2CE3;
+    }
+
+    /*-----------------------------------------*/
+    /*--------Services Page Start-------------------*/
+    /*-----------------------------------------*/
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .service {
+        text-align: center;
+        padding: 32px;
+        background-color: #DEDEED;
+        cursor: pointer;
+
+        margin-right: 42px;
+        margin-bottom: 16px;
+        width: 350px;
+        transition: all 0.4s ease;
+    }
+
+    .service img {
+        width: 320px;
+    }
+
+    .service:hover {
+        background-color: #F1F1F1;
+        box-shadow: 5px 5px 10px #d0d0e0;
+    }
+
+
+    /*-----------------------------------------*/
+    /*--------Portfolio Page Start-------------------*/
+    /*-----------------------------------------*/
+    .portfolio {
+        background-color: #F0F9F9;
+
+    }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .project {
+        height: 250px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        width: 100%;
+
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 0;
+
+        left: 0;
+        background-color: #FB937C;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        opacity: 0.2;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+    .project:hover .project-overlay {
+        opacity: 0.8;
+
+    }
+
+    .project-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .project-text h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+
+    }
+
+    .project-text h3,
+    .project-text h4 {
+
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    /*-----------------------------------------*/
+    /*--------Contact Page Start-------------------*/
+    /*-----------------------------------------*/
+
+
+    .contact-us>div>div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+    }
+
+    .contact-form {
+        grid-area: 1 / 1 / 2 / 2;
+
+    }
+
+    .map {
+        grid-area: 2 / 1 / 3 / 2;
+        margin-left: 32px;
+    }
+
+    .form-group {
+        margin-bottom: 32px;
+        margin-left: 120px;
+
+    }
+
+    .form-group label {
+        display: block;
+        width: 100%;
+        color: #8684A0;
+    }
+
+    .form-group input {
+        display: block;
+        max-width: 100%;
+        padding: 8px 2px;
+        outline: 0;
+        border: none;
+        border-bottom: 2px solid #8a815E;
+        width: calc(100%-4px);
+    }
+
+    .form-group textarea {
+        display: block;
+        max-width: 100%;
+        padding: 8px 2px;
+        outline: 0;
+
+        width: calc(100%-4px);
+    }
+
+    .form-group button {
+        outline: none;
+        border: none;
+        padding: 16px 32px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+
+    .map {
+        width: 500px;
+        padding-right: 64px;
+    }
+
+    /*-----------------------------------------*/
+    /*--------Footer Page Start-------------------*/
+    /*-----------------------------------------*/
+
+    .footer {
+
+        background: #CCCC;
+        text-align: center;
+    }
+
+    .footer h3 {
+        color: #353535;
+
+    }
+
+
+}
+
 @media (min-width : 576px) {
     .intro-image img {
         width: 400px;
